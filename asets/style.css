@@ -373,3 +373,8 @@ body {
   text-decoration: underline;
 }
 
+/* ====== NON RESPONSIVE MODE ====== */
+html, body {
+  min-width: 1200px; /* biar tidak mengecil di HP */
+  overflow-x: auto;  /* biar bisa digeser kanan kiri kalau layar kecil */
+}
