@@ -199,19 +199,6 @@ body {
   text-decoration: underline;
 }
 
-@media (max-width: 768px) {
-  .post-row {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .post-image img {
-    width: 100%;
-    height: auto;
-	margin-bottom: 10px;
-  }
-}
-
 .more a {
   color: #2c3e50;
   font-weight: bold;
@@ -312,12 +299,6 @@ body {
   line-height: 1.6;
 }
 
-@media (max-width: 768px) {
-  .footer-container {
-    flex-direction: column;
-    gap: 30px;
-  }
-}
   /* ====== Halaman Artikel Tunggal ====== */
 .article-content {
   max-width: 900px;
@@ -391,64 +372,4 @@ body {
 .footer-column a:hover {
   text-decoration: underline;
 }
-
-/* ====== RESPONSIVE FIX (untuk tampilan HP/tablet) ====== */
-@media (max-width: 768px) {
-
-  /* Struktur utama turun ke bawah */
-  #container {
-    flex-direction: column;
-    padding: 15px;
-    gap: 20px;
-  }
-
-  /* Artikel */
-  .post-row {
-    flex-direction: column;
-    align-items: center;
-    text-align: left;
-  }
-
-  .post-image img {
-    width: 100%;
-    height: auto;
-    margin-bottom: 10px;
-  }
-
-  .post-text {
-    width: 100%;
-  }
-
-  /* Sidebar pindah ke bawah */
-  .sidebar {
-    width: 100%;
-    margin-top: 20px;
-  }
-
-  /* Navbar */
-  .menu {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .menu li {
-    margin: 5px 0;
-  }
-
-  /* Footer kolom turun ke bawah */
-  .footer-container {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 20px;
-  }
-
-  .footer-column {
-    width: 100%;
-  }
-
-  .footer-column h4 {
-    margin-bottom: 8px;
-  }
-}
-
 
