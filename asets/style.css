@@ -115,8 +115,8 @@ body {
 }
 
 .sidebar li {
-	margin: 4px 0;
-	padding: 3px 4px;
+	margin: 2px 0 !important;
+	padding: 2px 4px !important;
 	border-radius: 4px;
 	transition: background 0.3s;
 }
@@ -363,5 +363,34 @@ body {
 .footer-column {
   text-align: left !important; 
 }
+
+	/* ====== Rapatkan baris teks di footer ====== */
+.footer-column h4,
+.footer-column p,
+.footer-column ul li,
+.footer-column a {
+  margin: 0 !important;
+  padding: 0 !important;
+  line-height: 1.2 !important; /* ✅ baris jadi lebih rapat */
+}
+
+.footer-column ul {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.footer-column ul li {
+  list-style: none;
+}
+
+.footer-column a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+.footer-column a:hover {
+  text-decoration: underline;
+}
+
 
 
