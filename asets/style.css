@@ -141,8 +141,9 @@ body {
 /* ====== Artikel ====== */
 .post-row {
   display: flex;
+  flex-wrap: wrap;
   align-items: flex-start;
-  gap: 15;
+  gap: 25px;
   background: #fff;
   border-radius: 8px;
   padding: 15px;
@@ -165,6 +166,7 @@ body {
   object-fit: cover;  
   border-radius: 5px;
   flex-shrink: 0;
+	margin-right: 15px;
 }
 
 
