@@ -245,7 +245,7 @@ body {
   color: #ffffff;
   padding: 40px 60px;
   text-align: left;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Times New Roman", Times, serif;
   border-top: 4px solid #6e7c5e;
   width: 100%;
   position: relative;
@@ -264,7 +264,8 @@ body {
 
 .footer-column {
   flex: 1;
-  min-width: 250px;
+  font-family: "Times New Roman", Times, serif;
+  min-width: 100px;
 }
 
 .footer-column h4 {
