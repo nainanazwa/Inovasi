@@ -155,8 +155,10 @@ body {
 
 .post-image img {
   width: 180px;           
-  height: 120px;       
-  object-fit: cover;     
+  height: auto;
+  float: left;
+  margin-right: 15px;
+  margin-bottom: 10px;    
   border-radius: 5px;
 }
 
