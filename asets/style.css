@@ -343,4 +343,18 @@ body {
   background: transparent; /* penting! biar nggak nutup footer */
 }
 
+	/* ====== Perbaikan posisi teks footer ====== */
+.site-footer {
+  text-align: left !important;  /* pastikan semua teks footer rata kiri */
+}
+
+.footer-container {
+  justify-content: flex-start !important; /* kolom mulai dari kiri */
+  text-align: left !important; 
+}
+
+.footer-column {
+  text-align: left !important;  /* isi kolom (judul, list, paragraf) juga kiri */
+}
+
 
