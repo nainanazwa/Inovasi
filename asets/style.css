@@ -135,7 +135,8 @@ body {
 
 /* ====== Artikel ====== */
 .post-row {
-  display: flex;
+  display: block;
+	overflow: auto;
   align-items: flex-start;
   gap: 15px;
   background: #fff;
