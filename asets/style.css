@@ -99,6 +99,7 @@ body {
   border: 1px solid #d8c3a5;
 }
 
+/* ====== Sidebar ====== */
 .sidebar h3 {
 	color:  #5a3e2b;
 	font-family: "Georgia", serif;
@@ -114,28 +115,17 @@ body {
 	margin: 0;
 }
 
-.sidebar li {
-	margin: 2px 0 !important;
-	padding: 2px 4px !important;
-	border-radius: 4px;
-	transition: background 0.3s;
-}
-
 .sidebar a {
 	line-height: 1.4;
-	color: #3b2f2f; 
+	color: #3b2f2f;
 	text-decoration: none;
 	font-size: 16px;
 	font-family: "Times New Roman", serif;
 }
 
 .sidebar a:hover {
-	color: #6b8e23; 
+	color: #6b8e23;
 	text-decoration: underline;
-}
-
-.sidebar li:hover {
-	background-color: #f5e8d0;
 }
 
 /* ====== Artikel ====== */
@@ -149,37 +139,27 @@ body {
   padding: 15px;
   box-shadow: 0 0 5px rgba(0,0,0,0.1);
   margin-bottom: 20px;
-  flex-wrap: wrap;
-}
-
-.t-images {
-  flex: 0 0 35%;
-  height: 200px;
-  background-size: cover;
-  background-position: center;
-  border-radius: 10px;
 }
 
 .post-image img {
-  width: 200px;           
+  width: 200px;
   height: 150px;
-  object-fit: cover;  
+  object-fit: cover;
   border-radius: 5px;
   flex-shrink: 0;
-	margin-right: 15px;
+  margin-right: 15px;
 }
-
 
 .post-text {
   flex: 1;
-	font-family: "Times New Roman", Times, serif !important;
+	font-family: "Times New Roman", Times, serif;
 }
 
 .post-text h2 {
   font-size: 20px;
   font-weight: bold;
   margin-bottom: 8px;
-	font-family: "Times New Roman", Times, serif !important;
+	font-family: "Times New Roman", Times, serif;
 }
 
 .post-text p {
@@ -188,118 +168,20 @@ body {
   color: #333;
 	text-align: justify;
 }
-	
-.post-text .more a {
-  color: #5e3b1d;          
-  text-decoration: none;
-  font-weight: bold;
-}
 
-.post-text .more a:hover {
-  text-decoration: underline;
-}
-
+/* ✨ Style untuk Baca Selengkapnya */
 .more a {
-  color: #2c3e50;
   font-weight: bold;
+  color: #2c5f2d;
   text-decoration: none;
 }
 
 .more a:hover {
-  color: #27ae60;
-}
-
-/* ====== Sidebar ====== */
-.widget {
-  margin-bottom: 25px;
-}
-
-.widget h3 {
-  margin-bottom: 10px;
-  color: #2c3e50;
-}
-
-.widget ul {
-  list-style: none;
-}
-
-.widget ul li a {
-  text-decoration: none;
-  color: #34495e;
-}
-
-.widget ul li a:hover {
-  color: #27ae60;
-}
-
-/* ====== FOOTER MODERN ====== */
-.site-footer {
-  background-color: #9ca88d;
-  color: #ffffff;
-  padding: 40px 60px;
-  text-align: left;
-  font-family: "Times New Roman", Times, serif;
-  border-top: 4px solid #6e7c5e;
-  width: 100%;
-  position: relative;
-  z-index: 5;
-}
-
-.footer-container {
-  width: 90%;
-  max-width: 1200px; 
-  margin: 0 auto; 
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 40px;
-}
-
-.footer-column {
-  flex: 1;
-  font-family: "Times New Roman", Times, serif;
-  min-width: 100px;
-}
-
-.footer-column h4 {
-  color: #ffffff;
-  font-size: 1.4em;
-  font-weight: bold;
-  margin-bottom: 15px;
-  border-bottom: 2px solid #27ae60;
-  display: inline-block;
-  padding-bottom: 5px;
-}
-
-.footer-column ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.footer-column ul li {
-  margin-bottom: 10px;
-}
-
-.footer-column a {
-  color: #33ccff;
-  text-decoration: none;
-  font-weight: bold;
-  transition: 0.3s;
-}
-
-.footer-column a:hover {
-  color: #27ae60;
   text-decoration: underline;
+  color: #27ae60;
 }
 
-.footer-column p {
-  color: #cccccc;
-  margin-bottom: 8px;
-  line-height: 1.6;
-}
-
-  /* ====== Halaman Artikel Tunggal ====== */
+/* ====== Halaman Artikel Tunggal ====== */
 .article-content {
   max-width: 900px;
   margin: 40px auto;
@@ -323,58 +205,69 @@ body {
   text-align: justify;
 }
 
-#container {
-  display: flex;
-  justify-content: space-between;
-  padding: 30px;
-  gap: 30px;
-  background: transparent; /* penting! biar nggak nutup footer */
-}
-
-	/* ====== Perbaikan posisi teks footer ====== */
-.site-footer {
-  text-align: left !important;  
-}
-
-.footer-container {
-  justify-content: flex-start !important; 
-  text-align: left !important; 
-}
-
-.footer-column {
-  text-align: left !important; 
-}
-
-	/* ====== Rapatkan baris teks di footer ====== */
-.footer-column h4,
-.footer-column p,
-.footer-column ul li,
-.footer-column a {
-  margin: 0 !important;
-  padding: 0 !important;
-  line-height: 1.2 !important; /* ✅ baris jadi lebih rapat */
-}
-
-.footer-column ul {
-  margin: 0 !important;
-  padding: 0 !important;
-}
-
-.footer-column ul li {
-  list-style: none;
-}
-
-.footer-column a {
+/* ✅ Tombol kembali */
+.back-btn {
   display: inline-block;
+  margin-top: 20px;
+  padding: 8px 14px;
+  background: #2c5f2d;
+  color: #fff;
+  border-radius: 6px;
+  font-weight: bold;
   text-decoration: none;
 }
 
+.back-btn:hover {
+  opacity: 0.85;
+}
+
+/* ====== Footer ====== */
+.site-footer {
+  background-color: #9ca88d;
+  color: #ffffff;
+  padding: 40px 60px;
+  text-align: left;
+  font-family: "Times New Roman", Times, serif;
+  border-top: 4px solid #6e7c5e;
+  width: 100%;
+  position: relative;
+  z-index: 5;
+}
+
+.footer-container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.footer-column {
+  flex: 1;
+  font-family: "Times New Roman", Times, serif;
+  min-width: 100px;
+}
+
+.footer-column h4 {
+  color: #ffffff;
+  font-size: 1.3em;
+  border-bottom: 2px solid #27ae60;
+  margin-bottom: 10px;
+}
+
+.footer-column a {
+  color: #33ccff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
 .footer-column a:hover {
-  text-decoration: underline;
+  color: #27ae60;
 }
 
 /* ====== NON RESPONSIVE MODE ====== */
 html, body {
-  min-width: 1200px; /* biar tidak mengecil di HP */
-  overflow-x: auto;  /* biar bisa digeser kanan kiri kalau layar kecil */
+  min-width: 1200px;
+  overflow-x: auto;
 }
