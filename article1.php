@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Krisis Sampah dan Tantangan Lingkungan Modern - Eco Ride</title>
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <img src="../assets/images/header.png" alt="Header" />
+  </header>
+
+  <nav class="main-nav">
+    <ul class="menu">
+      <li><a href="../index.php">Beranda</a></li>
+      <li><a href="../index.php#container">Artikel</a></li>
+      <li class="dropdown">
+        <a href="#" class="dropbtn" onclick="toggleDropdown(event)">Profil</a>
+        <div class="dropdown-content">
+          <a href="#">Kontak Kami</a>
+          <a href="#">Tentang Kami</a>
+        </div>
+      </li>
+    </ul>
+  </nav>
+
+  <main>
+    <div class="article-content">
+      <h1>Krisis Sampah dan Tantangan Lingkungan Modern</h1>
+      <img src="../assets/images/article1.png" alt="Krisis Sampah">
+      <p>
+        Permasalahan sampah telah menjadi isu global yang semakin mendesak seiring meningkatnya aktivitas manusia...
+      </p>
+      <p>
+        Data menunjukkan bahwa volume sampah terus meningkat setiap tahunnya. Tantangan utama terletak pada bagaimana masyarakat dan industri dapat mengelola sampah secara berkelanjutan tanpa merusak lingkungan.
+      </p>
+      <p>
+        Teknologi kini memungkinkan kita mengonversi sampah menjadi energi alternatif yang ramah lingkungan, seperti Waste to Energy, biogas, dan metode konversi modern lainnya.
+      </p>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-container">
+      <p>&copy; 2025 Eco Ride. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    function toggleDropdown(event) {
+      event.preventDefault();
+      const dropdown = event.target.closest('.dropdown');
+      dropdown.classList.toggle('active');
+    }
+
+    document.addEventListener('click', function(e) {
+      const dropdowns = document.querySelectorAll('.dropdown');
+      dropdowns.forEach(d => {
+        if (!d.contains(e.target)) {
+          d.classList.remove('active');
+        }
+      });
+    });
+  </script>
+</body>
+</html>
