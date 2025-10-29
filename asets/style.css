@@ -378,3 +378,48 @@ html, body {
   min-width: 1200px; /* biar tidak mengecil di HP */
   overflow-x: auto;  /* biar bisa digeser kanan kiri kalau layar kecil */
 }
+
+/* ====== FORM KONTAK ====== */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.contact-form label {
+  font-weight: bold;
+  color: #3a4231;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  font-family: "Times New Roman", serif;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #6b8e23;
+  outline: none;
+  box-shadow: 0 0 5px rgba(107, 142, 35, 0.3);
+}
+
+.contact-form button {
+  background-color: #6b8e23;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  font-size: 17px;
+  cursor: pointer;
+  width: fit-content;
+}
+
+.contact-form button:hover {
+  background-color: #5e7a1e;
+}
+
