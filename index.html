@@ -16,7 +16,7 @@
   <!-- Navigasi -->
   <nav class="main-nav">
     <ul class="menu">
-      <li><a href="#">Beranda</a></li>
+      <li><a href="index.html">Beranda</a></li>
       <li><a href="#container">Artikel</a></li>
       <li class="dropdown">
         <a href="#" class="dropbtn" onclick="toggleDropdown(event)">Profil</a>
@@ -39,9 +39,7 @@
           </div>
           <div class="post-text">
             <h2>Krisis Sampah dan Tantangan Lingkungan Modern</h2>
-            <p>
-              Permasalahan sampah telah menjadi isu global...
-            </p>
+            <p>Permasalahan sampah telah menjadi isu global...</p>
             <div class="more"><a href="article1.html">Baca selengkapnya</a></div>
           </div>
         </div>
@@ -54,9 +52,7 @@
           </div>
           <div class="post-text">
             <h2>Inovasi Teknologi dalam Pengolahan Sampah Menjadi Energi</h2>
-            <p>
-              Kemajuan teknologi telah membuka jalan...
-            </p>
+            <p>Kemajuan teknologi telah membuka jalan...</p>
             <div class="more"><a href="article2.html">Baca selengkapnya</a></div>
           </div>
         </div>
@@ -69,9 +65,7 @@
           </div>
           <div class="post-text">
             <h2>Menuju Ekonomi Sirkular dan Lingkungan Berkelanjutan</h2>
-            <p>
-              Pemanfaatan teknologi untuk mengubah sampah...
-            </p>
+            <p>Pemanfaatan teknologi untuk mengubah sampah...</p>
             <div class="more"><a href="article3.html">Baca selengkapnya</a></div>
           </div>
         </div>
@@ -79,21 +73,53 @@
 
     </article>
 
-    <!-- Sidebar kamu tetap -->
     <aside class="sidebar" aria-label="Sidebar">
-      ...
+      <h3>Artikel Populer</h3>
+      <ul>
+        <li><a href="article1.html">Krisis Sampah dan Tantangan Lingkungan Modern</a></li>
+        <li><a href="article2.html">Inovasi Teknologi dalam Pengolahan Sampah</a></li>
+        <li><a href="article3.html">Menuju Ekonomi Sirkular</a></li>
+      </ul>
     </aside>
   </main>
 
   <footer class="site-footer">
-    ...
+    <div class="footer-container">
+      <div class="footer-column">
+        <h4>Tentang Eco Ride</h4>
+        <p>Mengedukasi dan menginspirasi menuju masa depan hijau berkelanjutan.</p>
+      </div>
+      <div class="footer-column">
+        <h4>Navigasi</h4>
+        <ul>
+          <li><a href="index.html">Beranda</a></li>
+          <li><a href="#container">Artikel</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4>Kontak</h4>
+        <p>Email: info@ecoride.id</p>
+        <p>&copy; 2025 Eco Ride</p>
+      </div>
+    </div>
   </footer>
 
   <script>
-    ...
+    function toggleDropdown(event) {
+      event.preventDefault();
+      const dropdown = event.target.closest('.dropdown');
+      dropdown.classList.toggle('active');
+    }
+
+    document.addEventListener('click', function(e) {
+      const dropdowns = document.querySelectorAll('.dropdown');
+      dropdowns.forEach(d => {
+        if (!d.contains(e.target)) {
+          d.classList.remove('active');
+        }
+      });
+    });
   </script>
 
 </body>
 </html>
-
-
