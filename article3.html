@@ -8,14 +8,16 @@
 </head>
 <body>
 
+  <!-- Header -->
   <header class="site-header">
     <img src="asets/images/header.png" alt="Header">
   </header>
 
+  <!-- Navigasi -->
   <nav class="main-nav">
     <ul class="menu">
-      <li><a href="../index.html">Beranda</a></li>
-      <li><a href="../index.html#container">Artikel</a></li>
+      <li><a href="index.html">Beranda</a></li>
+      <li><a href="index.html#container">Artikel</a></li>
       <li class="dropdown">
         <a href="#" class="dropbtn" onclick="toggleDropdown(event)">Profil</a>
         <div class="dropdown-content">
@@ -26,6 +28,61 @@
     </ul>
   </nav>
 
+  <!-- Konten Artikel -->
   <main>
-    <div class="
+    <div class="article-content">
+      <h1>Menuju Ekonomi Sirkular dan Lingkungan Berkelanjutan</h1>
+      <img class="article-image" src="asets/images/article3.png" alt="Ekonomi Sirkular">
 
+      <p>
+        Ekonomi sirkular merupakan pendekatan inovatif yang berfokus pada penggunaan sumber daya secara berkelanjutan,
+        di mana produk dan material dimanfaatkan kembali sebanyak mungkin untuk mengurangi limbah.
+      </p>
+      <p>
+        Dalam sistem ekonomi tradisional, pola konsumsi dan produksi masih linear — dari bahan mentah, menjadi produk, kemudian menjadi sampah.
+        Sebaliknya, ekonomi sirkular menekankan daur ulang, perbaikan, dan inovasi agar siklus sumber daya tetap berjalan tanpa menambah beban lingkungan.
+      </p>
+      <p>
+        Teknologi berperan penting dalam mendukung transisi menuju ekonomi sirkular, mulai dari pengolahan limbah menjadi energi,
+        inovasi bahan ramah lingkungan, hingga digitalisasi rantai pasok untuk efisiensi sumber daya.
+      </p>
+      <p>
+        Dengan menerapkan prinsip ekonomi sirkular, kita dapat memperpanjang umur produk, mengurangi ketergantungan pada sumber daya alam baru,
+        dan menjaga keseimbangan ekosistem demi masa depan yang berkelanjutan.
+      </p>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-column">
+        <h4>Tentang Eco Ride</h4>
+        <p>Mengedukasi dan menginspirasi menuju masa depan hijau berkelanjutan.</p>
+      </div>
+      <div class="footer-column">
+        <h4>Navigasi</h4>
+        <ul>
+          <li><a href="index.html">Beranda</a></li>
+          <li><a href="index.html#container">Artikel</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4>Kontak</h4>
+        <p>Email: info@ecoride.id</p>
+        <p>&copy; 2025 Eco Ride</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Script Dropdown -->
+  <script>
+    function toggleDropdown(event) {
+      event.preventDefault();
+      const dropdown = event.target.closest('.dropdown');
+      dropdown.classList.toggle('active');
+    }
+
+    document.addEventListener('click', function(e) {
+      const dropdowns = document.querySelectorAll('.dropdown');
+      dropdowns.forEach(d => {
